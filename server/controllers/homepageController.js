@@ -6,5 +6,6 @@ exports.homepage = async(req,res) => {
     console.log(entries);
     await res.render('index', {
         title: 'Food Blog | Tyler Duke Dev',
-        entries });
+        entries
+    });
 };

@@ -11309,3 +11309,9 @@ html {
     background-repeat: no-repeat;
     min-height: 15rem;
 }
+
+
+/* custom styles below */
+#next-slider-btn {
+    float: right;
+}

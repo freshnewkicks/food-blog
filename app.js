@@ -28,12 +28,17 @@ const routes = {
     index: require('./server/routes/indexRouter.js')
 }
 
+const api = {
+    api: require('./server/routes/apiRouter.js')
+}
+
 app.use(bodyParser.urlencoded({ extended: true })); // body parser
 app.use(express.static(path.join(__dirname, 'public'))); // static assets folder
 app.use(expressLayouts); // express ejs layouts folder
 
 // routes:
 app.use('/', routes.index);
+app.use('/api', api.api);
 
 app.listen(port, () => console.log(`Listening on ${port}`)); // listen
 

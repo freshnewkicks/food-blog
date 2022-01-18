@@ -1,2 +1,3 @@
 /.env
-/server/models/seeds/seeds.js
+!/server/models/seeds/seeds.js
+!/server/models/seeds/posts.js
