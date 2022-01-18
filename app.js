@@ -6,9 +6,14 @@ const express = require('express'), // express
       expressLayouts = require('express-ejs-layouts'), // ejs layouts
       methodOverride = require('method-override'), // http verb override
       port = process.env.PORT || 3000 // server port
+      mongoose = require('mongoose');
 
 require('dotenv').config(); // server config
-
+mongoose.connect({
+    host: process.env.DB_HOST,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS
+})
 app.set('views', 'server/views');
 app.set('view engine', 'ejs');
 app.set('layout', 'layouts/main'); // main layout folder
@@ -17,7 +22,7 @@ app.use(methodOverride('_method')); // http verb override
 
 // controllers object:
 const controllers = {
-    recipeController: require('./server/controllers/recipeController.js')
+    homepageController: require('./server/controllers/homepageController.js')
 }
 // routes object:
 const routes = {
