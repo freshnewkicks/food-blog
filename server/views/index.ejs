@@ -123,10 +123,12 @@
             <div class="row gx-5">
                 <div class="col-lg-4 mb-5 cards">
                     <div class="card h-100 shadow border-0">
-                        <img class="card-img-top header-img" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..
+                        <img id="img-1" class="card-img-top header-img"
+                             src="https://dummyimage.com/600x350/ced4da/6c757d"
+                             alt="..
                         ." />
                         <div class="card-body p-4">
-                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2" id="cat-1">
                                 <%= entries.at(-1).category %>
                             </div>
                                 <a class="text-decoration-none link-dark stretched-link" href="#!">
@@ -134,19 +136,20 @@
                                         <%= entries.at(-1).title %>
                                     </h5>
                                     </a>
-                            <p class="card-text mb-0">
+                            <p id="desc-1" class="card-text mb-0">
                                 <%= entries.at(-1).desc %>
                             </p>
                         </div>
                         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                             <div class="d-flex align-items-end justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                    <img id="pi-1" class="rounded-circle me-3"
+                                         src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                                     <div class="small">
-                                        <div class="fw-bold authors"> <%= entries.at(-1).author%> </div>
-                                        <div class="text-muted date-time"><%= entries.at(-1).dateCreated %>
+                                        <div id="author-1" class="fw-bold authors"> <%= entries.at(-1).author%> </div>
+                                        <div id="dc-1" class="text-muted date-time"><%= entries.at(-1).dateCreated %>
                                             &middot;
-                                            <span class="text-muted read-time">
+                                            <span id="rt-1" class="text-muted read-time">
                                             <%= entries.at(-1).readTime%>
                                         </span>
                                         </div>
@@ -158,24 +161,27 @@
                 </div>
                 <div class="col-lg-4 mb-5 cards">
                     <div class="card h-100 shadow border-0">
-                        <img class="card-img-top header-img" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..
+                        <img id="img-2" class="card-img-top header-img"
+                             src="https://dummyimage.com/600x350/adb5bd/495057"
+                             alt="..
                         ." />
                         <div class="card-body p-4">
-                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2" id="cat-2">
                                 <%= entries.at(-2).category %>
                             </div>
                             <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title
                             mb-3 animate__animated" id="title-2"><%= entries.at(-2).title %></h5></a>
-                            <p class="card-text mb-0"><%= entries.at(-2).desc %></p>
+                            <p id="desc-2" class="card-text mb-0"><%= entries.at(-2).desc %></p>
                         </div>
                         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                             <div class="d-flex align-items-end justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                    <img id="pi-2" class="rounded-circle me-3"
+                                         src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                                     <div class="small">
-                                        <div class="fw-bold authors"> <%= entries.at(-2).author%> </div>
-                                        <div class="text-muted date-time"><%= entries.at(-2).dateCreated%>
-                                            &middot; <span class="text-muted read-time">
+                                        <div id="author-2" class="fw-bold authors"> <%= entries.at(-2).author%> </div>
+                                        <div id="dc-2" class="text-muted date-time"><%= entries.at(-2).dateCreated%>
+                                            &middot; <span id="rt-2" class="text-muted read-time">
                                             <%= entries.at(-2).readTime%>
                                         </span>
                                         </div>
@@ -187,27 +193,33 @@
                 </div>
                 <div class="col-lg-4 mb-5 cards">
                     <div class="card h-100 shadow border-0">
-                        <img class="card-img-top header-img" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..
+                        <img id="img-3" class="card-img-top header-img"
+                             src="https://dummyimage.com/600x350/6c757d/343a40"
+                             alt="..
                         ." />
                         <div class="card-body p-4">
-                            <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                            <div class="badge bg-primary bg-gradient rounded-pill mb-2" id="cat-3">
                                 <%= entries.at(-3).category %>
                             </div>
                             <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title
                             mb-3 animate__animated" id="title-3">
                                     <%= entries.at(-3).title %>
                                 </h5></a>
-                            <p class="card-text mb-0">
+                            <p id="desc-3" class="card-text mb-0">
                                 <%= entries.at(-3).desc %>
                             </p>
                         </div>
                         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                             <div class="d-flex align-items-end justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                    <img id="pi-3" class="rounded-circle me-3"
+                                         src="https://dummyimage.com/40x40/ced4da/6c757d"
+                                         alt="..." />
                                     <div class="small">
-                                        <div class="fw-bold authors"> <%= entries.at(-3).author %> </div>
-                                        <div class="text-muted date-time"><%= entries.at(-3).dateCreated %> &middot; <span class="text-muted read-time">
+                                        <div id="author-3" class="fw-bold authors"> <%= entries.at(-3).author %> </div>
+                                        <div id="dc-3" class="text-muted date-time"><%= entries.at(-3).dateCreated %>
+                                        &middot;
+                                            <span id="rt-3" class="text-muted read-time">
                                             <%= entries.at(-3).readTime%>
                                         </span>
                                         </div>
