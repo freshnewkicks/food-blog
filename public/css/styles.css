@@ -11315,3 +11315,7 @@ html {
 #next-slider-btn {
     float: right;
 }
+
+.card-body {
+    overflow-x: hidden;
+}

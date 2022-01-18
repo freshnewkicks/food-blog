@@ -3,7 +3,6 @@ const Entry = require("../models/posts");
 
 exports.homepage = async(req,res) => {
     let entries = await Entry.find({})
-    console.log(entries);
     await res.render('index', {
         title: 'Food Blog | Tyler Duke Dev',
         entries
