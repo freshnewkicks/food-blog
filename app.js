@@ -9,11 +9,10 @@ const express = require('express'), // express
       mongoose = require('mongoose');
 
 require('dotenv').config(); // server config
-mongoose.connect({
-    host: process.env.DB_HOST,
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS
-})
+mongoose.connect(process.env.DATABASE)
+    .then(() => console.log('Connected to MongoDB'))
+    .catch((e) => console.log(`Error connecting to MongoDB: ${e}`));
+
 app.set('views', 'server/views');
 app.set('view engine', 'ejs');
 app.set('layout', 'layouts/main'); // main layout folder

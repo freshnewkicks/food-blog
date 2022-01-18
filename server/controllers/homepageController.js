@@ -1,5 +1,10 @@
 // get home page ('index');
+const Entry = require("../models/posts");
 
 exports.homepage = async(req,res) => {
-    await res.render('index', { title: 'Food Blog | Tyler Duke Dev' });
+    let entries = await Entry.find({})
+    console.log(entries);
+    await res.render('index', {
+        title: 'Food Blog | Tyler Duke Dev',
+        entries });
 };
